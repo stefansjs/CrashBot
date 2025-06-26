@@ -1,8 +1,9 @@
-require('dotenv').config();
-const { Client, GatewayIntentBits } = require('discord.js');
-const Parser = require('rss-parser');
-const { read_config } = require('./js/config');
+import { config as dotenv_config } from 'dotenv';
+import { Client, GatewayIntentBits } from 'discord.js';
+import Parser from 'rss-parser';
+import { read_config } from './config.mjs';
 
+dotenv_config();
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
 const parser = new Parser();
 

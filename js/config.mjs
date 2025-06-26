@@ -2,7 +2,7 @@ import { readFileSync } from 'fs';
 import { parse } from 'toml';
 import Ajv from 'ajv';
 
-function read_config() {
+export function read_config() {
     try {
         const config = validate_config(read_toml('config/config.toml'), read_toml('config/config.schema.toml'));
         return {
@@ -32,5 +32,3 @@ function read_toml(path) {
     const config = parse(configText);
     return config;
 }
-
-export default { read_config };
