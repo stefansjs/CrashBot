@@ -11,7 +11,6 @@ additionalProperties = false
 
 [properties.crashbot.properties.sign_rss_feed]
 type = "string"
-format = "uri"
 description = "The RSS feed URL to monitor."
 
 [properties.crashbot.properties.channel_id]
@@ -19,8 +18,7 @@ type = "string"
 description = "The Discord channel ID to post messages to."
 
 [properties.crashbot.properties.check_interval_minutes]
-type = "integer"
-minimum = 1,
+type = "number"
 description = "How often (in minutes) to check the RSS feed."
 
 
