@@ -9,6 +9,7 @@
   "author": "",
   "license": "GPL-3.0-or-later",
   "dependencies": {
+    "ajv": "^8.17.1",
     "discord.js": "^14.20.0",
     "dotenv": "^16.5.0",
     "rss-parser": "^3.13.0",
