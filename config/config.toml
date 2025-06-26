@@ -1,0 +1,4 @@
+[crashbot]
+sign_rss_feed = "https://crashspacela.com/sign/feed"
+channel_id = ""
+check_interval_minutes = 15

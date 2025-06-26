@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CrashBot Config",
+  "type": "object",
+  "properties": {
+    "crashbot": {
+      "type": "object",
+      "properties": {
+        "sign_rss_feed": {
+          "type": "string",
+          "format": "uri",
+          "description": "The RSS feed URL to monitor."
+        },
+        "channel_id": {
+          "type": "string",
+          "description": "The Discord channel ID to post messages to."
+        },
+        "check_interval_minutes": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "How often (in minutes) to check the RSS feed."
+        }
+      },
+      "required": ["sign_rss_feed", "channel_id"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["crashbot"],
+  "additionalProperties": false
+}
