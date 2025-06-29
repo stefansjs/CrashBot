@@ -2,12 +2,10 @@
 title = "CrashBot Config"
 type = "object"
 required = ["crashbot"]
-additionalProperties = false
 
 [properties.crashbot]
 type = "object"
 required = ["sign_rss_feed", "channel_id"]
-additionalProperties = false
 
 [properties.crashbot.properties.sign_rss_feed]
 type = "string"
